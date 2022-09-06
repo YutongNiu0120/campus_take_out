@@ -10,6 +10,11 @@ spring:
       url: jdbc:mysql://localhost:3306/db_take_out
       username: root
       password: root
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    time-to-live: 1800000 #设置缓存数据的过期时间
 mybatis-plus:
   configuration:
     #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
@@ -24,4 +29,3 @@ mybatis-plus:
 
 campus_take_out:
   storage_path: /Users/baymax/codes/MyCodes/campus_take_out_img/
-
