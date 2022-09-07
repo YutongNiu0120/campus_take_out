@@ -23,4 +23,6 @@
 
 ## 接口文档
 
-[API](./api_doc.md)
+- [API(Markdown)](./api_doc.md)
+
+- [API(HTML)](./api_doc.html)
