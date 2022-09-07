@@ -1,4 +1,5 @@
-# 工程简介
+# 校园外卖平台Campus take out
 
-# 延伸阅读
+
+使用Spring Boot、Mybatis、MySQL、Redis实现
 
