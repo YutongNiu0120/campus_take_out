@@ -11,6 +11,7 @@ import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.UUID;
 
 @RestController
@@ -42,7 +43,7 @@ public class CommonController {
         }
 
         try {
-            file.transferTo(new File(storagePath + fileName));
+            file.transferTo(Paths.get(dir.getAbsolutePath(),fileName));
         } catch (IOException e) {
             e.printStackTrace();
         }

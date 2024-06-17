@@ -32,3 +32,5 @@ build/
 
 ### macos ###
 .DS_Store
+
+/file/

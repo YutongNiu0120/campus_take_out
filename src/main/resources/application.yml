@@ -7,7 +7,7 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/db_take_out
+      url: jdbc:mysql://localhost:3306/take_out
       username: root
       password: root
   redis:
@@ -28,4 +28,4 @@ mybatis-plus:
       logic-delete-value: 1
 
 campus_take_out:
-  storage_path: /Users/baymax/codes/MyCodes/campus_take_out_img/
+  storage_path: file/img/
