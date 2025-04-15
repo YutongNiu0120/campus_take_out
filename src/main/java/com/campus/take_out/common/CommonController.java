@@ -11,6 +11,7 @@ import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.UUID;
 
@@ -43,7 +44,9 @@ public class CommonController {
         }
 
         try {
-            file.transferTo(Paths.get(dir.getAbsolutePath(),fileName));
+            Path path = Paths.get(dir.getAbsolutePath(), fileName);
+            file.transferTo(path);
+            log.info("文件上传成功,path:{}",path);
         } catch (IOException e) {
             e.printStackTrace();
         }
